@@ -61,9 +61,9 @@ services:
       - PG_PORT=5432
       - PG_POOL_MAX=20
       - JAEGER_HOST=jaeger
-      - IMAGE_PROXY_SECRET=some-secret
-      - JWT_SECRET=some_secret
-      - SSO_JWT_SECRET=some_sso_secret
+      - IMAGE_PROXY_SECRET=$IMAGE_PROXY_SECRET
+      - JWT_SECRET=$JWT_SECRET
+      - SSO_JWT_SECRET=$SSO_JWT_SECRET
       - CLIENT_URL=http://localhost:3000
       - GATEWAY_URL=http://localhost:8080/api
       - CONTENT_FETCH_URL=http://content-fetch:8080/?token=some_token
